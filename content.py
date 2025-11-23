@@ -59,7 +59,7 @@ class Matrix_Operations(object):
             sub = np.subtract(mat_sub1, mat_sub2)
             print(sub)
 
-    def scalar_matric_multiplications(self):
+    def scalar_matrix_multiplications(self):
         scalar = int(input("Enter a scalar value: "))
         scalar_mul1 = scalar * mat1
         scalar_mul2 = scalar * mat2
@@ -85,15 +85,18 @@ class Matrix_Operations(object):
         trans_mat1_ = np.transpose(mat1)
         trans_mat2_ = np.transpose(mat2)
         print(trans_mat1_, trans_mat2_)
-
-        
+                
 
 workspace = Matrix_Operations()
+print('Matrix Addition:')
 workspace.addition()
+print('Matrix Subtraction:')
 workspace.subtraction()
-workspace.scalar_matric_multiplications()
+print('Scalar-Matrix Multiplications:')
+workspace.scalar_matrix_multiplications()
+print('Matrix Inversion:')
 workspace.matrix_multiplication()
-
-
+print('Matrix Transposition:')
 workspace.transpose_elements()
+print('Matrix Multiplication:')
 workspace.matrix_multiplication()
