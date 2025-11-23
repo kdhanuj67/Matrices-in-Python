@@ -25,8 +25,10 @@ def create_matrix():
 class Matrix_Operations(object):
     def __init__(self):
         print('Instructions for Matrix Operations:')
+        print()
         print('1. For Addition and Subtraction of Matrix, the rows and columns of the matrices should be same.')
         print('2. For Multiplication (Matrix) of Mat1(n * m) and Mat2(p * q), n = q and m = p')
+        print()
         
         global mat1
         global mat2
@@ -85,7 +87,7 @@ class Matrix_Operations(object):
         trans_mat1_ = np.transpose(mat1)
         trans_mat2_ = np.transpose(mat2)
         print(trans_mat1_, trans_mat2_)
-                
+
 
 workspace = Matrix_Operations()
 print('Matrix Addition:')
